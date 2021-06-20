@@ -1,0 +1,26 @@
+
+Public Sub VBAofWallStreet()
+Dim ticker As String
+Dim i As Integer
+Dim lastrow As Integer
+Dim tickervolume As Integer
+
+
+lastrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+For i = 2 To lastrow
+
+    If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+    'If the Ticker has changed from the previous
+    
+    Else
+    'If the Ticker is the same as the previous
+    
+    tickervolume = tickervolume + Cells(i, 7)
+Next i
+'Ticker Symbol - Value of Ticker Cell
+'Yearly Change = Last entry - First Entry (by date)
+'Percent Change = (Close - Open)/100
+'Total Stock Volume = Sum of shared Ticker
+'Cells(i + 1, 1).Value <> Cells(i, 1).Value
+End Sub
