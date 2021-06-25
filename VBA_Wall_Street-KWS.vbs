@@ -137,7 +137,9 @@ tickertablerow = Cells(Rows.Count, 9).End(xlUp).Row
         'Update stock volume
         
         End If
-        
+
+    Next i
+            
         Range("P2").Value = greatestincreaseticker
         Range("Q2").Value = greatestincrease
         Range("P3").Value = greatestdecreaseticker
@@ -146,11 +148,12 @@ tickertablerow = Cells(Rows.Count, 9).End(xlUp).Row
         Range("Q4").Value = greatestvolume
         Range("Q2:Q3").NumberFormat = "0.00%"
         'Fill out advanced table
-        
-        Range("I:Q").Columns.AutoFit
+
+            
+        Range("I1:L" & tickertablerow).Columns.AutoFit
+        Range("O1:Q4").Columns.AutoFit
         'Adjust Column Width
         
-    Next i
         
     'Run through all new percentage cells to determine greatest increase %, decrease %, and volume
     'May be able to incorporate into the initial run, If greater/less than last row replace, else skip
@@ -159,3 +162,4 @@ tickertablerow = Cells(Rows.Count, 9).End(xlUp).Row
 Next ws
 
 End Sub
+
