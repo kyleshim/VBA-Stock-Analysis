@@ -5,7 +5,7 @@
 
 **Description:**
 
-We used VBA scripting to analyze real stock market data.
+I used VBA scripting to analyze real stock market data.
 
 <b>Datasets used:</b>
 
@@ -18,11 +18,25 @@ We used VBA scripting to analyze real stock market data.
 
   - Visual Basic for Applications (VBA)
 
+### Analysis:
+----------------------
+
+Results were generated for 3 different years of Stock Data.
+
+The results generated are as follows:
+
+ - Total Stock Volume for all tickers
+ - Yearly Points Change for all tickers
+ - Percent Change for all tickers
+ - Greatest Percent Increase for year
+ - Greatest Percent Decrease for year
+ - Greatest Total Volume Traded for year
+
 ###  Data Visualization:
 ----------------------
 
-![total_volume](Results/total_volume.png)
+![Stock_Data_2014](Results/Stock_Data_2014.png)
 
-![yearly_change](Results/yearly_change.png)
+![Stock_Data_2015](Results/Stock_Data_2015.png)
 
-![greatest_change](Results/greatest_change.png)
+![Stock_Data_2016](Results/Stock_Data_2016.png)
